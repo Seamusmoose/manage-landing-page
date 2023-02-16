@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import styles from "@/styles/Home.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -15,109 +15,34 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
+        Pricing Product About Us Careers Community Get Started Bring everyone
+        together to build better products. Manage makes it simple for software
+        teams to plan day-to-day tasks while keeping the larger team goals in
+        view. Get Started What’s different about Manage? Manage provides all the
+        functionality your team needs, without the complexity. Our software is
+        tailor-made for modern digital product teams. 01 Track company-wide
+        progress See how your day-to-day tasks fit into the wider vision. Go
+        from tracking progress at the milestone level all the way done to the
+        smallest of details. Never lose sight of the bigger picture again. 02
+        Advanced built-in reports Set internal delivery estimates and track
+        progress toward company goals. Our customisable dashboard helps you
+        build out the reports you need to keep key stakeholders informed. 03
+        Everything you need in one place Stop jumping from one service to
+        another to communicate, store files, track tasks and share documents.
+        Manage offers an all-in-one team productivity solution. What they’ve
+        said Anisha Li “Manage has supercharged our team’s workflow. The ability
+        to maintain visibility on larger milestones at all times keeps everyone
+        motivated.” Ali Bravo “We have been able to cancel so many other
+        subscriptions since using Manage. There is no more cross-channel
+        confusion and everyone is much more focused.” Richard Watts “Manage
+        allows us to provide structure and process. It keeps us organized and
+        focused. I can’t stop recommending them to everyone I talk to!” Shanai
+        Gough “Their software allows us to track, manage and collaborate on our
+        projects from anywhere. It keeps the whole team in-sync without being
+        intrusive.” Get Started Simplify how your team works today. Get Started
+        Home Pricing Products About Us Careers Community Privacy Policy Updates
+        in your inbox… Go Copyright 2020. All Rights Reserved
       </main>
     </>
-  )
+  );
 }
