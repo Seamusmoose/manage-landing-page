@@ -7,8 +7,8 @@ type Props = {};
 
 export const NavBar = (props: Props) => {
   return (
-    <nav>
-      <Image src={navtitle} height={200} width={200} alt="nav-title" />
+    <nav className="nav">
+      <Image src={navtitle} height={24} width={147} alt="nav-title" />
       <ul>
         <li>Pricing</li>
         <li>Product</li>

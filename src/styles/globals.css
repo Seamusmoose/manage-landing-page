@@ -25,12 +25,34 @@
   --third-heading: var(--fs-400);
 
   --primary-nav: var(--fs-400);
+
+  --primary-body: var(--fs-400);
 }
 
-@media (min-width: 50em) {
+.primary-heading {
+  font-size: var(--primary-heading);
+}
+
+.secondary-heading {
+  font-size: var(--secondary-heading);
+}
+
+.nav {
+  font-size: var(--primary-nav);
+}
+
+body {
+  font-size: var(--primary-body);
+}
+
+@media (max-width: 50em) {
   :root {
     --primary-heading: var(--fs-700);
     --secondary-heading: var(--fs-600);
+  }
+
+  .nav {
+    display: flex;
   }
 }
 
