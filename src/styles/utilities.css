@@ -2,7 +2,27 @@
   display: flex;
 }
 
-.col {
+.f_center {
+  justify-content: center;
+  align-items: center;
+}
+
+.f_col {
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.flex_space_between {
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid_center {
+  place-content: center;
 }
