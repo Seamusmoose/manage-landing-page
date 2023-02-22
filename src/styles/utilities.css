@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.f_start {
+  justify-content: flex-start;
+}
+
 .f_col {
   flex-direction: column;
   justify-content: center;

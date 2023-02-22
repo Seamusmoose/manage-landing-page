@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+
+:root {
+  --ff-primary: "Be Vietnam Pro", sans-serif;
+
+  --clr-primary-BR: hsl(12, 88%, 59%);
+  --clr-primary-DB: hsl(228, 39%, 23%);
+
+  --clr-neutral-DGB: hsl(227, 12%, 61%);
+  --clr-neutral-VDB: hsl(233, 12%, 13%);
+  --clr-neutral-VPR: hsl(13, 100%, 96%);
+  --clr-netutral-VLG: hsl(0, 0%, 98%);
+  --clr-neutral-button-text: rgba(252, 246, 245, 1);
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  --fs-400: 1rem;
+  --fs-500: 1.8rem;
+  --fs-600: 2.5rem;
+  --fs-700: 3.5rem;
+
+  --primary-heading: var(--fs-600);
+  --secondary-heading: var(--fs-500);
+  --third-heading: var(--fs-400);
+
+  --primary-nav: var(--fs-400);
+
+  --primary-body: var(--fs-400);
+
+  --padding-20: 20px;
+}
+
+body {
+  font-size: var(--primary-body);
+}
+
+.primary-heading {
+  font-size: var(--primary-heading);
+}
+
+.secondary-heading {
+  font-size: var(--secondary-heading);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+  margin: 10px;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.content {
+  overflow-x: hidden;
+}
+
+/* h2 {
+  font-size: var(--secondary-heading);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  letter-spacing: -0.61875px;
+}
+
+h1 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.general_text {
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  line-height: 28px;
+  font-weight: var(--fw-regular);
+}
+
+.navbar__container {
+  height: 100px;
+}
+
+.navbar__menu {
+  font-size: var(--primary-nav);
+  display: none;
+}
+
+.navbar__hamburger {
+  display: block;
+}
+
+.nav_get_started {
+  display: none;
+}
+
+.button {
+  border-radius: 22px;
+  border: none;
+  width: 137px;
+  height: 44px;
+  background-color: var(--clr-primary-BR);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.link-text {
+  list-style: none;
+  text-decoration: none;
+  color: var(--clr-neutral-button-text);
+}
+
+.carousel {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.carousel__item {
+  width: 200px;
+  height: 400px;
+  width: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.carousel__button-container {
+  height: 50px;
+  width: 200px;
+  gap: 5px;
+}
+
+.carousel__button {
+  background-color: var(--clr-primary-BR);
+  border: 1px solid var(--clr-primary-BR);
+  border-radius: 3.5px;
+  width: 7px;
+  height: 7px;
+}
+
+.image__blob {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  height: 400px;
+  z-index: -1;
+}
+
+.image__blob_two {
+  position: absolute;
+  right: 0;
+  top: 50;
+  width: auto;
+  height: 200px;
+  z-index: -1;
+}
+
+.data-image {
+  width: auto;
+  height: auto;
+}
+
+.about {
+  margin-top: 93px;
+  margin-bottom: 54px;
+}
+
+.list {
+  font-weight: var(--fw-bold);
+  background-color: var(--clr-neutral-VPR);
+}
+
+.list__number {
+  width: 67px;
+  height: 39px;
+  border-radius: 39px;
+  background-color: var(--clr-primary-BR);
+}
+
+@media (min-width: 600px) {
+  :root {
+    --primary-heading: var(--fs-700);
+    --secondary-heading: var(--fs-600);
+  }
+
+  .navbar__menu {
+    font-size: var(--primary-nav);
+    display: flex;
+  }
+
+  .navbar__menu > li > a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .navbar__menu > li {
+    list-style: none;
+    padding: 20px;
+  }
+
+  .navbar__hamburger {
+    display: none;
+  }
+
+  .nav_get_started {
+    display: block;
+  }
+} */
