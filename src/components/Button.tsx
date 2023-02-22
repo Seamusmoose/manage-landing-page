@@ -6,5 +6,5 @@ type Props = React.DetailedHTMLProps<
 >;
 
 export const Button = (props: Props) => {
-  return <button {...props} />;
+  return <button className="button" {...props} />;
 };

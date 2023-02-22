@@ -8,6 +8,7 @@ import pintrest from "@images/icon-pinterest.svg";
 import instagram from "@images/icon-instagram.svg";
 
 import { Button } from "./Button";
+import Link from "next/link";
 
 type Props = {};
 
@@ -34,7 +35,12 @@ export const Footer = (props: Props) => {
       </ul>
       <input type="text" placeholder=" Updates in your inbox…" />
       <p>Go Copyright 2020. All Rights Reserved</p>
-      <Button>Get Started</Button>
+      <Button>
+        <Link href={"#"} className="link-text">
+          {" "}
+          Get Started
+        </Link>
+      </Button>
     </nav>
   );
 };

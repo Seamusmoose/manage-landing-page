@@ -3,6 +3,9 @@ import Image from "next/image";
 import { Button } from "@/components/Button";
 import Layout from "@/components/Layout";
 import dataImage from "@images/illustration-intro.svg";
+import Link from "next/link";
+import { Carousel } from "@/components/Carousel";
+import bgImage from "../../public/images/bg-tablet-pattern.svg";
 
 export default function Home() {
   return (
@@ -14,20 +17,35 @@ export default function Home() {
       </Head>
 
       <Layout>
-        <div>
+        <div className="content">
           <section className="flex f_col">
-            <Image src={dataImage} width={400} height={400} alt="data-image" />
+            <Image
+              src={dataImage}
+              width={400}
+              height={400}
+              alt="data-image"
+              className="data-image"
+            />
             <h1 className="primary-heading fw-bold">
               Bring everyone together to build better products.
             </h1>
           </section>
-          <section>
+          <section className="flex f_col">
             <p>
               Manage makes it simple for software teams to plan day-to-day tasks
               while keeping the larger team goals in view.
             </p>
-            <Button>Get Started</Button>
-            <div className="image__blob">b</div>
+            <Button>
+              <Link className="link-text" href={"#"}>
+                Get Started
+              </Link>
+            </Button>
+            <div className="image__blob">
+              <Image src={bgImage} height={400} width={400} alt="bg" />
+            </div>
+            <div className="image__blob_two">
+              <Image src={bgImage} height={400} width={400} alt="bg" />
+            </div>
             <h2>What’s different about Manage?</h2>
             <p>
               Manage provides all the functionality your team needs, without the
@@ -54,34 +72,20 @@ export default function Home() {
             </p>
           </section>
           <section>
-            <h2>What they’ve said</h2>
-            <h3>Anisha Li </h3>
-            <p>
-              “Manage has supercharged our team’s workflow. The ability to
-              maintain visibility on larger milestones at all times keeps
-              everyone motivated.”
-            </p>
-            <h3>Ali Bravo</h3>
-            <p>
-              “We have been able to cancel so many other subscriptions since
-              using Manage. There is no more cross-channel confusion and
-              everyone is much more focused.”
-            </p>
-            <h3>Richard Watts</h3>
-            <p>
-              “Manage allows us to provide structure and process. It keeps us
-              organized and focused. I can’t stop recommending them to everyone
-              I talk to!”
-            </p>
-            <h3>Shanai Gough</h3>
-            <p>
-              “Their software allows us to track, manage and collaborate on our
-              projects from anywhere. It keeps the whole team in-sync without
-              being intrusive.”
-            </p>
-            <Button>Get Started </Button>
+            <Carousel />
+
+            <Button>
+              <Link className="link-text" href={"#"}>
+                {" "}
+                Get Started
+              </Link>
+            </Button>
             <h2>Simplify how your team works today.</h2>
-            <Button>Get Started</Button>
+            <Button>
+              <Link className="link-text" href={"#"}>
+                Get Started
+              </Link>
+            </Button>
           </section>
         </div>
       </Layout>

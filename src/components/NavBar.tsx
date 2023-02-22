@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import navtitle from "../../public/images/logo.svg";
 import { Button } from "./Button";
+import hamburger from "../../public/images/icon-hamburger.svg";
 
 type Props = {};
 
@@ -15,7 +16,9 @@ export const NavBar = (props: Props) => {
         width={147}
         alt="nav-title"
       />
-      <div className="navbar__hamburger">Hamburger eg</div>
+      <div className="navbar__hamburger">
+        <Image src={hamburger} height={18} width={25} alt="bg" />
+      </div>
       <ul className="navbar__menu">
         <li>
           <a href="#">Pricing</a>
