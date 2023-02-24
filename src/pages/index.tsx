@@ -18,7 +18,7 @@ export default function Home() {
 
       <Layout>
         <>
-          <section>
+          <section className="padding-block-900">
             <div className="container">
               <div className="even-columns">
                 <div>
@@ -97,12 +97,12 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="carousel">
-            <h2 className="fs-secondary-heading">What they’ve said</h2>
+          <section className="carousel | padding-block-700">
+            <h2 className="fs-secondary-heading fw-bold">What they’ve said</h2>
             {/* carousel header */}
             <Button className="button">Get Started</Button>
           </section>
-          <section className="cta | bg-accent-400 text-neutral-100">
+          <section className="cta | padding-block-700 bg-accent-400 text-neutral-100">
             <div className="container">
               <div className="even-columns">
                 <div>

@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="bg-neutral-900 text-neutral-100">
+    <footer className="padding-block-700 bg-neutral-900 text-neutral-100">
       <div className="container">
         <div className="even-columns">
           <div>
